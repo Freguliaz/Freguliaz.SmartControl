@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="logo">
+        <img src="assets/images/img1.png" alt="Imagem da Logo" height="50" width="50">
+    </div>
+    <div id="perfil">
+        <img src="assets/images/img2.png" alt="Imagem de Perfil" height="50" width="50">
+    </div>
+    <div class="msgbemvindo">
+        <h3>Seja Bem-Vindo <br>
+        Faça Login na sua conta!</h3>
+    </div>
+    <form method="post">
+        <label for="email"> E-mail </label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+        <label for="senha"> Senha </label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        <div class="botoes">
+            <input type="button" id="cadastro" value="cadastrar-se">
+            <input type="submit" id="login" value="login">
+            <input type="button" id="sabermais" value="saber mais >">
+        </div>
+    </form>
 </body>
 </html>
