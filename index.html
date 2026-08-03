@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
+
     <div id="logo">
         <img src="assets/images/img1.png" alt="Imagem da Logo" height="50" width="50">
     </div>
+
     <div id="perfil">
         <img src="assets/images/img2.png" alt="Imagem de Perfil" height="50" width="50">
     </div>
+
     <div class="msgbemvindo">
         <h1>Seja Bem-Vindo <br>
         Faça Login na sua conta!</h1>
     </div>
-    <form method="post">
+
+    <form method="get" action="dashboard.html">
         <label for="email"> E-mail </label>
-        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">required
         <label for="senha"> Senha </label>
         <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
         <div class="botoes">
             <input type="button" id="cadastro" value="cadastrar-se">
             <input type="submit" id="login" value="login">
-            <input type="button" id="sabermais" value="saber mais >">
+            <a id="sabermais" href="https://www.automateshow.com/blog/how-automation-is-impacting-the-automotive-industry-today" target="_blank">Saiba Mais ></a>
         </div>
     </form>
+
+    <footer>
+        <a href="https://pedrotech.com.br/pedrolandia/" target="_blank">Sobre</a>
+    </footer>
+    
 </body>
 </html>
