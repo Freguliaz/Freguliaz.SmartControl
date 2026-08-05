@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smart Control - Cadastro</title>
 </head>
 <body>
 
@@ -19,11 +19,13 @@
 
     <form method="get" action="index.html">
         <label for="nome_completo">Nome Completo</label>
-        <input type="text" name="nome_completo" id="nome_completo" placeholder="Digite seu nome completo" required minlength="8">
+        <input type="text" name="nome_completo" id="nome_completo" placeholder="Digite seu nome completo" required>
         <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required minlength="8">
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
         <label for="senha">Senha</label>
         <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8">
+        <label for="termos de uso">Termos de uso</label>
+        <input type="checkbox" name="termos de uso" id="termos de uso">
         <div>
             <input type="submit" id="cadastro" value="cadastro">
         </div>
