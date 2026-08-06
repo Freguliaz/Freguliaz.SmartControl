@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Control - Esqueceu a senha</title>
+    <title>Smart Control - Esqueci minha senha</title>
 </head>
 <body>
     <header>
@@ -11,16 +11,17 @@
             <img src="assets/images/img1.png" alt="Imagem da Logo" height="50" width="50">
         </div>
     </header>
+    <h1>Digite sua nova senha</h1>
     <div id="perfil">
         <img src="assets/images/img2.png" alt="Imagem de Perfil" height="50" width="50">
     </div>
     <form method="get" action="index.html">
-        <label for="email_recuperação">E-mail de Recuperação</label>
-        <input type="email" name="email_recuperação" id="email_recuperação" placeholder="Digite seu e-mail de recuperação" required>
-        <label for="código_recuperação">Digite o Código de Recuperação</label>
-        <input type="" name="senha" id="senha" placeholder="Digite o código" required minlength="6">
+        <label for="redefinir_senha">Digite sua nova senha</label>
+        <input type="password" name="redefinir_senha" id="redefinir_senha" required minlength="8">
+        <label for="confirmar_nova_senha">Confirmar nova senha</label>
+        <input type="password" name="confirmar_nova_senha" id="confirmar_nova_senha" required minlength="8">
         <div>
-            <input type="submit" id="validar_código" value="Validar Código">
+            <input type="submit" id="redefinir_senha" value="Redefinir senha">
         </div>
     </form>
     <footer>
