@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Control - Esqueceu a senha</title>
+    <link rel="stylesheet" href="assets/css/email.recuperacao.css">
 </head>
 <body>
     <header>
@@ -15,13 +16,13 @@
     <div id="perfil">
         <img src="assets/images/img2.png" alt="Imagem de Perfil" height="50" width="50">
     </div>
-    <form method="dialog">
-        <label for="email_recuperação">E-mail de Recuperação</label>
-        <input type="email" name="email_recuperação" id="email_recuperação" placeholder="Digite seu e-mail de recuperação" required>
+    <form class="form_email_recuperacao" method="dialog">
+        <label for="email_recuperacao">E-mail de Recuperação</label>
+        <input type="email" name="email_recuperacao" id="email_recuperacao" placeholder="Digite seu e-mail de recuperação" required>
         <button type="submit">Enviar código</button>
     </form>
-    <form method="get" action="forget_senha.html">
-        <label for="código_recuperação">Digite o Código de Recuperação</label>
+    <form class="form_codigo_recuperacao" method="get" action="forget_senha.html">
+        <label for="codigo_recuperacao">Digite o Código de Recuperação</label>
         <input type="text" name="codigo" id="codigo" placeholder="Digite o código" required minlength="6" maxlength="6">
         <button type="submit">Confirmar</button>
     </form>
