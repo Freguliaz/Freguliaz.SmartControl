@@ -4,40 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="icon" href="assets/images/icone.png">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <img src="assets/images/img1.png" alt="Imagem da Logo" height="50" width="50">
-        </div>
-    </header>
-    <div id="perfil">
-        <img src="assets/images/img2.png" alt="Imagem de Perfil" height="50" width="50">
-    </div>
-    <img src="assets/images/img_fundo.png" alt="Imagem de fundo do login">
-    <div id="titulo_login">
-        <h1>Seja Bem-Vindo<br>
-        Faça Login na sua conta!</h1>
-    </div>
-    <form class="form_login" method="get" action="dashboard.html">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8">
-        <div class="botoes">
-            <a id="cadastro" href="cadastro.html">Cadastre-se</a>
-            <input type="submit" id="login" value="login">
-            <a id="email_recuperacao" href="email_recuperacao.html">Esqueci minha senha</a>
+    <main>
+        <div class="lado_esquerdo">
+            <div id="logo">
+                <img src="assets/images/img1.png" alt="Imagem da Logo" height="200" width="200">
+            </div>
+            <div id="titulo_login">
+                <h1>Seja Bem-Vindo<br>
+                Faça Login na sua conta!</h1>
+            </div>
             <a id="sabermais" href="https://www.automateshow.com/blog/how-automation-is-impacting-the-automotive-industry-today" target="_blank">Saiba Mais ></a>
+            <div class="rodape">
+                <p>&copy; 2026 Fregulia. Todos os direitos reservados</p>
+                <ul>
+                    <li><a href="https://pedrotech.com.br/pedrolandia/" target="_blank">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
         </div>
-    </form>
+        <div class="lado_direito">
+            <div id="perfil">
+                <img src="assets/images/img2.png" alt="Imagem de Perfil" height="150" width="150">
+            </div>
+            <form class="form_login" method="get" action="dashboard.html">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8">
+                <div class="botoes">
+                    <a id="cadastro" href="cadastro.html">Cadastre-se</a>
+                    <input type="submit" id="login" value="login">
+                    <a id="email_recuperacao" href="email_recuperacao.html">Esqueci minha senha</a>
+                </div>
+            </form>
+        </div>
+    </main>
     <footer>
-        <ul>
-            <li><a href="https://pedrotech.com.br/pedrolandia/" target="_blank">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-        <p>&copy; 2026 Fregulia. Todos os direitos reservados</p>
+        
     </footer>
 </body>
 </html>

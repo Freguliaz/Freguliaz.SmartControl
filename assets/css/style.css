@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
+    color: rgb(255, 199, 0);
+}
+
+main {
+    display: flex;
+}
+
+.lado_esquerdo {
+    background-image: url('../images/img_fundo.png');
+    width: 40%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sabermais {
+    align-self: flex-start;
+    margin-left: 20px;
+    background: linear-gradient(90deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
+    color: rgb(255, 199, 0);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.lado_direito {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100vh;
+    align-items: center;
+    width: 60%;
+    justify-content: space-around;
+}
