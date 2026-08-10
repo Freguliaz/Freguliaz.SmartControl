@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: linear-gradient(90deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
+    --color-pd: #ffc700;
+}
+
 body {
     height: 100vh;
-    background: linear-gradient(90deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
-    color: rgb(255, 199, 0);
+    background: var(--bg-color);
+    color: var(--color-pd);
 }
 
 main {
@@ -16,7 +21,7 @@ main {
 
 .lado_esquerdo {
     background-image: url('../images/img_fundo.png');
-    width: 40%;
+    width: 50%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,21 +30,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-.rodape {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#sabermais {
-    align-self: flex-start;
-    margin-left: 20px;
-    background: linear-gradient(90deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
-    color: rgb(255, 199, 0);
-    padding: 10px;
-    text-decoration: none;
+    border-right: 2px solid var(--color-pd);
 }
 
 .lado_direito {
@@ -48,6 +39,31 @@ main {
     align-content: center;
     height: 100vh;
     align-items: center;
-    width: 60%;
-    justify-content: space-around;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#sobre, #contato, #saber_mais {
+    text-decoration: none;
+    color: var(--color-pd);
+}
+
+#email, #senha {
+    width: 400px;
+    height: 45px;
+    border-radius: 8px;
+    border-color: var(--color-pd);
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
 }
