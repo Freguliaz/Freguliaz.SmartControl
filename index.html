@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Control | Login</title>
+    <link rel="icon" href="assets/images/icone.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="lado_esquerdo">
+            <div id="logo">
+                <img src="assets/images/img1.png" alt="Imagem da Logo" height="290" width="260">
+            </div>
+            <div id="titulo_login">
+                <h1>Seja Bem-Vindo!<br>
+                Faça Login na sua conta!</h1>
+            </div>
+            <a id="saber_mais" href="https://www.automateshow.com/blog/how-automation-is-impacting-the-automotive-industry-today" target="_blank">Saiba Mais</a>
+            <div class="rodape">
+                <p>&copy; 2026 Fregulia. Todos os direitos reservados</p>
+                <ul>
+                    <li><a id="sobre" href="https://pedrotech.com.br/pedrolandia/" target="_blank">Sobre</a></li>
+                    <li><a id="contato" href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lado_direito">
+            <div id="perfil">
+                <img src="assets/images/img2.png" alt="Imagem de Perfil" height="190" width="190">
+            </div>
+            <form class="form_login" method="get" action="dashboard.html">
+                <label id="label_email" for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                <label id="label_senha" for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8">
+                <div class="botoes">
+                    <a id="cadastro" href="cadastro.html">Cadastre-se</a>
+                    <input type="submit" id="login" value="Login">
+                    <a id="email_recuperacao" href="email_recuperacao.html">Recuperar senha</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

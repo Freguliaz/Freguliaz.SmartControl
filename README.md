@@ -1,1 +1,1 @@
-# Freguliaz.SmartControl
+# SmartControl.github.io

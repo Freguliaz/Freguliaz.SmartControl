@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Control - Esqueceu a senha</title>
+    <link rel="stylesheet" href="assets/css/email.recuperacao.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="assets/images/img1.png" alt="Imagem da Logo" height="50" width="50">
+        </div>
+    </header>
+    <h1>Digite seu e-mail de recuperação</h1>
+    <div id="perfil">
+        <img src="assets/images/img2.png" alt="Imagem de Perfil" height="50" width="50">
+    </div>
+    <form class="form_email_recuperacao" method="dialog">
+        <label for="email_recuperacao">E-mail de Recuperação</label>
+        <input type="email" name="email_recuperacao" id="email_recuperacao" placeholder="Digite seu e-mail de recuperação" required>
+        <button type="submit">Enviar código</button>
+    </form>
+    <form class="form_codigo_recuperacao" method="get" action="forget_senha.html">
+        <label for="codigo_recuperacao">Digite o Código de Recuperação</label>
+        <input type="text" name="codigo" id="codigo" placeholder="Digite o código" required minlength="6" maxlength="6">
+        <button type="submit">Confirmar</button>
+    </form>
+    <footer>
+        <a href="index.html">Voltar ao início</a>
+        <p>&copy; 2026 Fregulia. Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
