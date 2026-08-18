@@ -9,7 +9,8 @@
     --bg-color: linear-gradient(180deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
     --bg-color-opc: linear-gradient(180deg, rgba(91, 21, 6, 0.8) 0%, rgba(153, 7, 7, 0.8) 50%);
     --color-pd: #ffc700;
-    --color-black: #000000;
+    --color-black: #000;
+    --color-white: #fff;
     --color-black-opc: rgba(0, 0, 0, 0.5)
 }
 
@@ -27,7 +28,6 @@ body {
     height: 100vh;
     background: var(--bg-color);
     color: var(--color-pd);
-    /* background-attachment: fixed; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -89,20 +89,57 @@ nav a {
     font-size: 25px;
 }
 
-.grafico_barras {
-  align-items: flex-end;
-  gap: 16px;
+.graficos {
   height: 200px;
-  padding: 20px;
-  width: 40px;
-  background-color: #3498db;
+  padding: 10px;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  position: relative;
+  justify-content: space-around;
+}
+
+.grafico_barras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grafico_area {
+    display: flex;
+    gap: 16px;
+    padding: 10px;
+    color: var(--color-white);
+    background-color: var(--bg-color-opc);
+    height: 100%;
 }
 
 .grafico_barras span {
+    padding: 10px;
+}
+
+.grafico_pizza {
+    display: flex;
+    padding: 10px;
+    color: var(--color-white);
+    background-color: var(--bg-color-opc);
+}
+
+.grafico_janeiro, .grafico_fevereiro, .grafico_marco {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+#barra1, #barra3, #barra5 {
+    background-color: aquamarine;
+}
+
+#barra2, #barra4, #barra6 {
+    background-color: orange;
+}
+
+/* 
+.grafico span {
   position: absolute;
   top: -25px;
   font-size: 12px;
-}
+} */
