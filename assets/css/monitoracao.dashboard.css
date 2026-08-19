@@ -112,14 +112,17 @@ nav a {
     box-shadow: 10px 10px 20px 5px var(--color-black-opc);
     border: 3px solid var(--color-black);
     border-radius: 22px;
+    width: 500px;
 }
 
-.grafico_area {
+.grafico_area_barras {
     display: flex;
     gap: 40px;
     padding: 20px;
     color: var(--color-black);
     height: 100%;
+    width: 100%;
+    justify-content: center;
 }
 
 .grafico_mes_janeiro, .grafico_mes_fevereiro, .grafico_mes_marco {
@@ -164,9 +167,6 @@ nav a {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-}
-
-#maquinas_grafico_barras, #manufatura_grafico_barras {
     font-size: 18px;
 }
 
@@ -178,9 +178,35 @@ nav a {
     color: orange;
 }
 
-.grafico_pizza {
+.grafico_area_pizza {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.grafico_pizza_css {
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(orange 90deg, yellow 90deg, yellow 360deg);
+    border-radius: 50%;
+    display: flex;
+}
+
+.legenda_grafico_pizza {
     padding: 10px;
-    color: var(--color-white);
-    background-color: var(--bg-color-opc);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+#maquinas_grafico_pizza {
+    color: yellow;
+}
+
+#manufatura_grafico_pizza {
+    color: orange;
 }
