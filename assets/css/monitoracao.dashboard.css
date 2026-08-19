@@ -11,7 +11,7 @@
     --color-pd: #ffc700;
     --color-black: #000;
     --color-white: #fff;
-    --color-black-opc: rgba(0, 0, 0, 0.5)
+    --color-black-opc: rgba(0, 0, 0, 0.6);
 }
 
 header {
@@ -19,14 +19,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--color-black-opc);
     top: 0;
     position: sticky;
 }
 
 body {
     height: 100vh;
-    background: var(--bg-color);
+    background-image: url(../images/img_fundo2.png);
+    background-size: cover;
     color: var(--color-pd);
     display: flex;
     flex-direction: column;
@@ -42,10 +43,15 @@ footer {
     height: 75px;
 }
 
+footer a {
+    color: #ffc700;
+    text-decoration: none;
+}
+
 nav {
     position: absolute;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background: var(--color-black-opc);
     border-radius: 16px;
     right: 20px;
 }
@@ -73,16 +79,16 @@ nav a {
 }
 
 #icone_hamburgueria {
-  cursor: pointer;
+    cursor: pointer;
 }
- 
+
 .menu_hamburguer span {
-  display: block;
-  height: 6px;
-  width: 55px;
-  background-color: var(--color-pd);
-  border-radius: 2px;
-  margin: 10px;
+    display: block;
+    height: 6px;
+    width: 55px;
+    background-color: var(--color-pd);
+    border-radius: 2px;
+    margin: 10px;
 }
 
 #titulo_dashboard {
@@ -90,30 +96,86 @@ nav a {
 }
 
 .graficos {
-  height: 200px;
-  padding: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.grafico_barras {
+.grafico_barras, .grafico_pizza {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 400px;
+    background: var(--bg-color-opc);
+    border-radius: 24px;
+    box-shadow: 10px 10px 20px 5px var(--color-black-opc);
+    border: 3px solid var(--color-black);
+    border-radius: 22px;
 }
 
 .grafico_area {
     display: flex;
-    gap: 16px;
-    padding: 10px;
-    color: var(--color-white);
-    background-color: var(--bg-color-opc);
+    gap: 40px;
+    padding: 20px;
+    color: var(--color-black);
     height: 100%;
+}
+
+.grafico_mes_janeiro, .grafico_mes_fevereiro, .grafico_mes_marco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+#mes_barras_janeiro, #mes_barras_fevereiro, #mes_barras_marco {
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+.barras {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .grafico_barras span {
     padding: 10px;
+}
+
+#titulo_grafico_barras,  #titulo_grafico_pizza {
+    padding: 10px;
+    font-size: 26px;
+    color: var(--color-white);
+}
+
+#barra1, #barra3, #barra5 {
+    background-color: yellow;
+}
+
+#barra2, #barra4, #barra6 {
+    background-color: orange;
+}
+
+.legenda_grafico_barras {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#maquinas_grafico_barras, #manufatura_grafico_barras {
+    font-size: 18px;
+}
+
+#maquinas_grafico_barras {
+    color: yellow;
+}
+
+#manufatura_grafico_barras {
+    color: orange;
 }
 
 .grafico_pizza {
@@ -122,24 +184,3 @@ nav a {
     color: var(--color-white);
     background-color: var(--bg-color-opc);
 }
-
-.grafico_janeiro, .grafico_fevereiro, .grafico_marco {
-    display: flex;
-    align-items: flex-end;
-}
-
-
-#barra1, #barra3, #barra5 {
-    background-color: aquamarine;
-}
-
-#barra2, #barra4, #barra6 {
-    background-color: orange;
-}
-
-/* 
-.grafico span {
-  position: absolute;
-  top: -25px;
-  font-size: 12px;
-} */

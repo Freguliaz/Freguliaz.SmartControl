@@ -6,14 +6,18 @@
     <title>Monitoração | Smart Control</title>
     <link rel="stylesheet" href="assets/css/monitoracao.dashboard.css">
 </head>
+
 <body>
+
     <header>
         <div id="logo">
             <img src="assets/images/img1.png" alt="Imagem da Logo" height="100" width="100">
         </div>
+
         <div id="titulo_dashboard">
             <h1>Dashboard Geral</h1>
         </div>
+
         <details class="menu">
             <summary id="icone_hamburgueria">
                 <div class="menu_hamburguer">
@@ -22,6 +26,7 @@
                     <span></span>
                 </div>
             </summary>
+
             <nav>
                 <ul>
                     <li><a href="#">Relatórios</a></li>
@@ -32,22 +37,41 @@
             </nav>
         </details>
     </header>
+
     <main>
+
         <div class="graficos">
             <div class="grafico_barras">
                 <div id="titulo_grafico_barras">Performance e Disponibilidade</div>
+                <div class="legenda_grafico_barras">
+                    <ul>
+                        <li id="maquinas_grafico_barras">Máquinas</li>
+                    </ul>
+                    <ul>
+                        <li id="manufatura_grafico_barras">Manufatura</li>
+                    </ul>
+                </div>
                 <div class="grafico_area">
-                    <div class="grafico_janeiro">
-                        <div id="barra1" style="height: 67%;"><span>67%</span></div>
-                        <div id="barra2" style="height: 40%;"><span>33%</span></div>
+                    <div class="grafico_mes_janeiro">
+                        <div class="barras">
+                            <div id="barra1" style="height: 67%;"><span>67%</span></div>
+                            <div id="barra2" style="height: 40%;"><span>33%</span></div>
+                        </div>
+                        <span id="mes_barras_marco">Janeiro</span>
                     </div>
-                    <div class="grafico_fevereiro">
-                        <div id="barra3" style="height: 72%;"><span>72%</span></div>
-                        <div id="barra4" style="height: 28%"><span>28%</span></div>
+                    <div class="grafico_mes_janeiro">
+                        <div class="barras">
+                            <div id="barra3" style="height: 72%;"><span>72%</span></div>
+                            <div id="barra4" style="height: 28%;"><span>28%</span></div>
+                        </div>
+                        <span id="mes_barras_fevereiro">Fevereiro</span>
                     </div>
-                    <div class="grafico_marco">
-                        <div id="barra5" style="height: 62%;"><span>62%</span></div>
-                        <div id="barra6"style="height: 38%"><span>38%</span></div>
+                    <div class="grafico_mes_marco">
+                        <div class="barras">
+                            <div id="barra5" style="height: 62%;"><span>62%</span></div>
+                            <div id="barra6" style="height: 38%;"><span>38%</span></div>
+                        </div>
+                        <span id="mes_barras_marco">Março</span>
                     </div>
                 </div>
             </div>

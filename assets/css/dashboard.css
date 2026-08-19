@@ -96,7 +96,8 @@ nav a {
 
 .blocos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .bloco1, .bloco2 {
