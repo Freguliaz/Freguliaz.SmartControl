@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --bg-color: linear-gradient(180deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
+    --bg-color-opc: linear-gradient(180deg, rgba(91, 21, 6, 0.8) 0%, rgba(153, 7, 7, 0.8) 50%);
+    --color-pd: #ffc700;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-black-opc: rgba(0, 0, 0, 0.6);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: var(--color-black-opc);
+    top: 0;
+    position: sticky;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../images/img_fundo2.png);
+    background-size: cover;
+    color: var(--color-pd);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background: var(--color-black-opc);
+    height: 75px;
+}
+
+footer a {
+    color: #ffc700;
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    padding: 20px;
+    background: var(--color-black-opc);
+    border-radius: 16px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-pd);
+}
+
+#icone_hamburgueria::marker {
+    content: "";
+}
+
+#icone_hamburgueria {
+    cursor: pointer;
+}
+
+.menu_hamburguer span {
+    display: block;
+    height: 6px;
+    width: 55px;
+    background-color: var(--color-pd);
+    border-radius: 2px;
+    margin: 10px;
+}
+
+#titulo_dashboard {
+    font-size: 25px;
+}
+
+.graficos {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.grafico_barras, .grafico_pizza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    background: var(--bg-color-opc);
+    border-radius: 24px;
+    box-shadow: 10px 10px 20px 5px var(--color-black-opc);
+    border: 3px solid var(--color-black);
+    border-radius: 22px;
+    width: 500px;
+}
+
+.grafico_area_barras {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    color: var(--color-black);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.grafico_mes_janeiro, .grafico_mes_fevereiro, .grafico_mes_marco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+#mes_barras_janeiro, #mes_barras_fevereiro, #mes_barras_marco {
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+.barras {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.grafico_barras span {
+    padding: 10px;
+}
+
+#titulo_grafico_barras,  #titulo_grafico_pizza {
+    padding: 10px;
+    font-size: 26px;
+    color: var(--color-white);
+}
+
+#barra1, #barra3, #barra5 {
+    background-color: yellow;
+}
+
+#barra2, #barra4, #barra6 {
+    background-color: orange;
+}
+
+.legenda_grafico_barras {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+#maquinas_grafico_barras {
+    color: yellow;
+}
+
+#manufatura_grafico_barras {
+    color: orange;
+}
+
+.grafico_area_pizza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.grafico_pizza_css {
+    height: 200px;
+    width: 200px;
+    background-image: conic-gradient(orange 90deg, yellow 90deg, yellow 360deg);
+    border-radius: 50%;
+    display: flex;
+}
+
+.legenda_grafico_pizza {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+#maquinas_grafico_pizza {
+    color: yellow;
+}
+
+#manufatura_grafico_pizza {
+    color: orange;
+}
