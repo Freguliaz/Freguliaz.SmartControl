@@ -199,8 +199,10 @@ nav a {
     padding: 10px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     font-size: 18px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 #maquinas_grafico_pizza {
@@ -209,4 +211,8 @@ nav a {
 
 #manufatura_grafico_pizza {
     color: orange;
+}
+
+#maquinas_grafico_pizza span, #manufatura_grafico_pizza span{
+    color: var(--color-white);
 }
