@@ -35,64 +35,67 @@
     </header>
     <main>
         <div class="tabela">
-        <h2>Controle de Produção e Vendas</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Mês</th>
-                    <th>Carros Produzidos</th>
-                    <th>Carros Vendidos</th>
-                    <th>Meta de Vendas</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Janeiro</td>
-                    <td>1.250</td>
-                    <td>980</td>
-                    <td>1.000</td>
-                </tr>
-                <tr>
-                    <td>Fevereiro</td>
-                    <td>1.320</td>
-                    <td>1.050</td>
-                    <td>1.100</td>
-                </tr>
-                <tr>
-                    <td>Março</td>
-                    <td>1.480</td>
-                    <td>1.180</td>
-                    <td>1.150</td>
-                </tr>
-                <tr>
-                    <td>Abril</td>
-                    <td>1.390</td>
-                    <td>1.120</td>
-                    <td>1.200</td>
-                </tr>
-                <tr>
-                    <td>Maio</td>
-                    <td>1.520</td>
-                    <td>1.260</td>
-                    <td>1.250</td>
-                </tr>
-                <tr>
-                    <td>Junho</td>
-                    <td>1.610</td>
-                    <td>1.340</td>
-                    <td>1.300</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>Total</td>
-                    <td>8.570</td>
-                    <td>6.930</td>
-                    <td>7.000</td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
+            <h2>Controle de Produção e Vendas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Carros Produzidos</th>
+                        <th>Carros Vendidos</th>
+                        <th>Meta de Vendas</th>
+                    </tr>
+                </thead>
+                <tbody class="buscaDadosTabela">
+                    <tr>
+                        <td>Janeiro</td>
+                        <td>1.250</td>
+                        <td>980</td>
+                        <td>1.000</td>
+                    </tr>
+                    <tr>
+                        <td>Fevereiro</td>
+                        <td>1.320</td>
+                        <td>1.050</td>
+                        <td>1.100</td>
+                    </tr>
+                    <tr>
+                        <td>Março</td>
+                        <td>1.480</td>
+                        <td>1.180</td>
+                        <td>1.150</td>
+                    </tr>
+                    <tr>
+                        <td>Abril</td>
+                        <td>1.390</td>
+                        <td>1.120</td>
+                        <td>1.200</td>
+                    </tr>
+                    <tr>
+                        <td>Maio</td>
+                        <td>1.520</td>
+                        <td>1.260</td>
+                        <td>1.250</td>
+                    </tr>
+                    <tr>
+                        <td>Junho</td>
+                        <td>1.610</td>
+                        <td>1.340</td>
+                        <td>1.300</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>8.570</td>
+                        <td>6.930</td>
+                        <td>7.000</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="campoBusca">
+                <input type="text" name="campoBusca" id="campoBusca" placeholder="Pesquise">
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Fregulia. Todos os direitos reservados</p>
@@ -101,5 +104,6 @@
             <li><a id="contato" href="#">Contato</a></li>
         </ul>
     </footer>
+    <script src="assets/js/logistica.js"></script>
 </body>
 </html>

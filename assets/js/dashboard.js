@@ -25,3 +25,18 @@ function exibirBoasVindas() {
 
     document.getElementById("boas-vindas").textContent = mensagem;
 }
+
+// const mainPage = document.querySelector('.mainPage');
+
+// const botao = document.createElement('button');
+// botao.id = "botaoManipulacao";
+// botao.type = "button";
+// botao.innerText = "Botão Para Manipular Página";
+
+// mainPage.appendChild(botao)
+
+// botaoManipulacao.addEventListener('click', (event) => {
+//     event.preventDefault();
+
+//     alert("Botão pressionado!");
+// })

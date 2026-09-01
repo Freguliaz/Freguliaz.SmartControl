@@ -106,7 +106,19 @@ main {
 
 .tabela h2 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 2rem;
+}
+
+.campoBusca {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.campoBusca input {
+    width: 20rem;
+    height: 1.8rem;
+    border-radius: 3px;
+    border: solid var(--color-pd) 2px;
 }
 
 table {
