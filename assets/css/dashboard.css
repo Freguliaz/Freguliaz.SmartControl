@@ -73,16 +73,16 @@ nav a {
 }
 
 #icone_hamburgueria {
-  cursor: pointer;
+    cursor: pointer;
 }
  
 .menu_hamburguer span {
-  display: block;
-  height: 6px;
-  width: 55px;
-  background-color: var(--color-pd);
-  border-radius: 2px;
-  margin: 10px;
+    display: block;
+    height: 6px;
+    width: 55px;
+    background-color: var(--color-pd);
+    border-radius: 2px;
+    margin: 10px;
 }
 
 #titulo_dashboard {

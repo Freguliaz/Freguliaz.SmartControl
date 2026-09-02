@@ -17,10 +17,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    gap: 1rem;
+    padding: 10px 20px;
     background: rgba(0, 0, 0, 0.4);
-    top: 0;
     position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#logo img {
+    width: clamp(55px, 8vw, 100px);
+    height: auto;
+}
+
+#titulo_dashboard {
+    font-size: clamp(12px, 2.5vw, 25px);
+    text-align: center;
+}
+
+.menu_hamburguer span {
+    display: block;
+    height: clamp(4px, 0.5vw, 6px);
+    width: clamp(35px, 5vw, 55px);
+    background-color: var(--color-pd);
+    border-radius: 2px;
+    margin: clamp(6px, 0.8vw, 10px);
 }
 
 body {
@@ -36,10 +57,22 @@ body {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
     align-items: center;
+    gap: 1rem;
+    padding: 10px 20px;
+    min-height: 75px;
     background: var(--color-black-opc);
-    height: 75px;
+}
+
+footer p {
+    font-size: clamp(13px, 1.5vw, 16px);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: clamp(13px, 1.5vw, 16px);
 }
 
 nav {
@@ -75,19 +108,6 @@ nav a {
 #icone_hamburgueria {
   cursor: pointer;
 }
- 
-.menu_hamburguer span {
-  display: block;
-  height: 6px;
-  width: 55px;
-  background-color: var(--color-pd);
-  border-radius: 2px;
-  margin: 10px;
-}
-
-#titulo_dashboard {
-    font-size: 25px;
-}
 
 #sobre, #contato {
     text-decoration: none;
@@ -96,11 +116,10 @@ nav a {
 
 main {
     width: 100%;
-    padding: 40px 20px;
 }
 
 .tabela {
-    width: 90%;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -116,9 +135,16 @@ main {
 
 .campoBusca input {
     width: 20rem;
-    height: 1.8rem;
-    border-radius: 3px;
-    border: solid var(--color-pd) 2px;
+    height: 2.3rem;
+    border-radius: 4px;
+    border: solid var(--color-pd) 3px;
+    padding-inline: 1rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.campoBusca input::placeholder {
+    color: var(--bg-color-opc);
 }
 
 table {
@@ -151,4 +177,20 @@ tfoot td {
     color: var(--color-pd);
     font-weight: bold;
     background: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 8px 10px;
+        gap: 0.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 12px;
+    }
 }

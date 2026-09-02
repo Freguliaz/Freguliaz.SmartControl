@@ -1,26 +1,23 @@
 const pesquisa = document.querySelector('#campoBusca')
 const dadosTabela = document.querySelectorAll('.buscaDadosTabela tr')
 
-campoBusca.addEventListener("keydown", (evento) => {
+campoBusca.addEventListener("input", function() {
 
-    if (evento.key === 'Enter') {
+    // if (evento.key === 'Enter') {
         const textoBusca = campoBusca.value.toLowerCase();
 
         dadosTabela.forEach(function(linha) {
-            const textoLinha = linha.textContent.toLowerCase();
+            const textoLinhas = linha.textContent.toLowerCase();
 
-            if (!textoBusca == textoLinha)
-                alert("Valor não encontrado!")
-
-            if (textoLinha.includes(textoBusca)) {
+            if (textoLinhas.includes(textoBusca)) {
                 linha.style.display = "";
             } else {
                 linha.style.display = "none";
             }
         });
     }
-});
-
+// }
+);
 
 // campoBusca.addEventListener("keydown", (evento) => {
 //     if (evento.key === 'Enter') {
