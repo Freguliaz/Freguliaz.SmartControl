@@ -43,6 +43,17 @@ footer {
     height: 75px;
 }
 
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: clamp(13px, 1.5vw, 16px);
+}
+
+footer p {
+    font-size: clamp(13px, 1.5vw, 16px);
+}
+
 footer a {
     color: #ffc700;
     text-decoration: none;
@@ -82,17 +93,23 @@ nav a {
     cursor: pointer;
 }
 
+#logo img{
+    width: clamp(55px, 8vw, 100px);
+    height: auto;
+}
+ 
 .menu_hamburguer span {
     display: block;
-    height: 6px;
-    width: 55px;
+    height: clamp(4px, 0.5vw, 6px);
+    width: clamp(35px, 5vw, 55px);
     background-color: var(--color-pd);
     border-radius: 2px;
-    margin: 10px;
+    margin: clamp(6px, 0.8vw, 10px);
 }
 
 #titulo_dashboard {
-    font-size: 25px;
+    font-size: clamp(13px, 2.5vw, 25px);
+    text-align: center;
 }
 
 .graficos {
@@ -106,22 +123,22 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: 25rem;
     background: var(--bg-color-opc);
     border-radius: 24px;
     box-shadow: 10px 10px 20px 5px var(--color-black-opc);
     border: 3px solid var(--color-black);
     border-radius: 22px;
-    width: 500px;
+    width: 30rem;
 }
 
 .grafico_area_barras {
     display: flex;
-    gap: 40px;
+    gap: 2px;
     padding: 20px;
     color: var(--color-black);
     height: 100%;
-    width: 100%;
+    width: 10rem;
     justify-content: center;
 }
 
@@ -152,6 +169,7 @@ nav a {
     padding: 10px;
     font-size: 26px;
     color: var(--color-white);
+    text-align: center;
 }
 
 #barra1, #barra3, #barra5 {
@@ -188,8 +206,8 @@ nav a {
 }
 
 .grafico_pizza_css {
-    height: 200px;
-    width: 200px;
+    height: 12rem;
+    width: 12rem;
     background-image: conic-gradient(orange 90deg, yellow 90deg, yellow 360deg);
     border-radius: 50%;
     display: flex;
@@ -215,4 +233,32 @@ nav a {
 
 #maquinas_grafico_pizza span, #manufatura_grafico_pizza span{
     color: var(--color-white);
+}
+
+@media (max-width: 1100px) {
+
+    header {
+        padding: 8px 10px;
+        gap: 0.5rem;
+    }
+
+    .graficos {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .grafico_barras, .grafico_pizza {
+        height: 25rem;
+        width: 22rem;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 3rem;
+    }
 }

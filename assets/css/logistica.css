@@ -143,10 +143,6 @@ main {
     outline: none;
 }
 
-.campoBusca input::placeholder {
-    color: var(--bg-color-opc);
-}
-
 table {
     width: 100%;
     border-collapse: collapse;

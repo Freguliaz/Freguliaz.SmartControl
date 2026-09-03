@@ -9,7 +9,7 @@
 <body>
     <header>
         <div id="logo">
-            <img src="assets/images/img1.png" alt="Imagem da Logo" height="100" width="100">
+            <img src="assets/images/img1.png" alt="Imagem da Logo">
         </div>
         <div id="titulo_dashboard">
             <h1>Dashboard Geral</h1>
@@ -33,15 +33,18 @@
             </nav>
         </details>
     </header>
-
     <main class="mainPage">
         <div class="blocos">
-            <div class="bloco1">
-                <a href="monitoracao_dashboard.html">Monitoração de Eficiência Geral</a>
-            </div>
-            <div class="bloco2">
-                <a href="logistica_dashboard.html">Controle de Produção de Logística</a>
-            </div>
+            <a href="monitoracao_dashboard.html" style="text-decoration: none;">
+                <div class="bloco1">
+                    <p>Monitoração de Eficiência Geral</p>
+                </div>
+            </a>
+            <a href="logistica_dashboard.html" style="text-decoration: none;">
+                <div class="bloco2">
+                    <p>Controle de Produção de Logística</p>
+                </div>
+            </a>
         </div>
     </main>
 
@@ -52,7 +55,6 @@
             <li><a id="contato" href="#">Contato</a></li>
         </ul>
     </footer>
-
     <script src="assets/js/dashboard.js"></script>
 </body>
 </html>

@@ -78,6 +78,10 @@ main {
     outline: none;
 }
 
+#email::placeholder, #senha::placeholder {
+    color: var(--color-black);
+}
+
 #email, #senha {
     max-width: 600px;
     height: 60px;
@@ -88,6 +92,7 @@ main {
     width: 100%;
     font-size: 15px;
     padding-left: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .form_login {
@@ -96,6 +101,10 @@ main {
     max-width: 600px;
     width: 100%;
     padding: 0 10px;
+}
+
+#email:focus, #senha:focus {
+    transform: scale(1.05);
 }
 
 #saber_mais {
