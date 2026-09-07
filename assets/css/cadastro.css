@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: linear-gradient(180deg, rgba(91, 21, 6, 1) 0%, rgba(153, 7, 7, 1) 50%);
+    --bg-color-opc: linear-gradient(180deg, rgba(91, 21, 6, 0.8) 0%, rgba(153, 7, 7, 0.8) 50%);
+    --color-pd: #ffc700;
+    --color-black: #000000;
+    --color-black-opc: rgba(0, 0, 0, 0.5)
+}

@@ -134,7 +134,7 @@ nav a {
 
 .grafico_area_barras {
     display: flex;
-    gap: 2px;
+    gap: 2rem;
     padding: 20px;
     color: var(--color-black);
     height: 100%;
@@ -247,6 +247,10 @@ nav a {
         gap: 2rem;
         align-items: center;
         padding: 2rem;
+    }
+
+    .grafico_area_barras {
+        gap: 2px;
     }
 
     .grafico_barras, .grafico_pizza {

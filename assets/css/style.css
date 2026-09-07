@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 :root {
@@ -53,7 +52,7 @@ main {
 }
 
 #perfil {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .rodape {
@@ -122,6 +121,7 @@ main {
     gap: 20px;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 2rem;
 }
 
 #cadastro, #email_recuperacao, #login {
