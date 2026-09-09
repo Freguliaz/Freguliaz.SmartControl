@@ -33,7 +33,7 @@
     </header>
     <main>
         <div id="perfil">
-            <img src="assets/images/img2.png" alt="Imagem de Perfil" height="180" width="180" style="margin-bottom: 1rem;">
+            <img src="assets/images/img2.png" alt="Imagem de Perfil" height="170" width="170" style="margin-bottom: 1rem;">
         </div>
         <form class="form_cadastro" method="get" action="index.html">
             <label id="label_nome" for="nome_completo">Nome Completo</label>
@@ -42,10 +42,12 @@
             <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
             <label id="label_senha" for="senha">Senha</label>
             <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8">
-            <label for="termos de uso">Termos de uso</label>
-            <input type="checkbox" name="termos de uso" id="termos de uso">
-            <div>
-                <input type="submit" id="cadastro" value="cadastro">
+            <div class="termosUso">
+                <label for="termos de uso">Termos de uso</label>
+                <input type="checkbox" name="termos de uso" id="termos de uso">
+            </div>
+            <div id="cadastro">
+                <input id="cadastroBtn" type="submit" value="Cadastro">
             </div>
         </form>
     </main>
